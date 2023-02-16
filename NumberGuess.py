@@ -1,3 +1,5 @@
+import random
+
 def main():
     guessed_number = input("Pick a nuber between 1 and 10: ")
     if guessed_number.isnumeric() == False:
@@ -10,6 +12,9 @@ def main():
     if guessed_number > 10:
         print("That number is too high.")
         exit(0)
+
+    random_number = random.randint(1,10)
+    print(random_number)
 
 
 if __name__ == "__main__":
