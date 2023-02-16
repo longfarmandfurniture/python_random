@@ -14,7 +14,18 @@ def main():
         exit(0)
 
     random_number = random.randint(1,10)
-    print(random_number)
+    #print(random_number)
+
+    if(guessed_number < random_number):
+        print(f"Your guess was too low, the number was {random_number}.")
+        exit(0)
+
+    if(guessed_number > random_number):
+        print(f"Your guess was too high, the number was {random_number}.")
+        exit(0)
+
+    if(guessed_number == random_number):
+        print(f"Good guess!  The number was {random_number}.")
 
 
 if __name__ == "__main__":
